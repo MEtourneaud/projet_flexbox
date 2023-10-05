@@ -94,11 +94,10 @@ section h2{
 section p{
     padding: 20px;
     text-align: left;
-    /* margin-right: 2vh; */
-    margin: 0 2vh 0 0;
-    height: 5vw;
+    /* margin: 0 2vh 0 0; */
+    /* height: 5vw; */
 }
- 
+
 
 
 /* GESTION BOUTONS */
@@ -133,19 +132,32 @@ a:hover{
     text-decoration: underline;
 }
 
-/* @media screen and (max-width: 1655px) {
-    .container{
-        flex-direction: column;
-        gap: 30px;
+@media screen and (max-width: 1700px) {
+    .ville{
+        height: 38vw;
+        /* margin-bottom: 10vw; */
     }
-} */
+    
+}
 
 @media screen and (max-width: 1440px) {
     .ville{
-        height: 32vw;
+        height: 38vw;
+        /* margin-bottom: 10vw; */
     }
     
-    
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+    }
+    .ville{
+        height: 32vw;
+        width: 30%;
+        margin-bottom: 10vw;
+    }
+        
 }
 
 @media screen and (max-width: 640px) {
