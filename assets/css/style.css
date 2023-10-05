@@ -53,17 +53,17 @@ main{
 }
 
 .ville{
+    position: relative;
     border: solid 1px;
-    height: 65vh;
-    width: 50vh;
+    height: 32vw;
+    width: 30%;
     box-shadow: 5px 5px 5px rgb(148, 142, 142);
 }
 
 
 /* GESTION IMAGES */
 .photo{
-    height: 35vh;
-    margin-bottom: 1vh;
+    height: 18vw;
     border: 0;
 }
 
@@ -89,25 +89,25 @@ main{
 /* GESTION TEXTES */
 section h2{
     padding: 20px;
-    margin-top: 2vh;
 }
 
 section p{
     padding: 20px;
     text-align: left;
-    margin-bottom: 2vh;
-    margin-right: 2vh;
+    /* margin-right: 2vh; */
+    margin: 0 2vh 0 0;
+    height: 5vw;
 }
  
 
 
 /* GESTION BOUTONS */
 .btn{
-    display: block;
-    margin: auto;
+    position: absolute;
     padding: 10px 10px;
-    margin-left: 15vh;
     text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -131,4 +131,25 @@ section p{
 
 a:hover{
     text-decoration: underline;
+}
+
+/* @media screen and (max-width: 1655px) {
+    .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+} */
+
+@media screen and (max-width: 1440px) {
+    .ville{
+        height: 32vw;
+    }
+    
+    
+}
+
+@media screen and (max-width: 640px) {
+    nav ul{
+        padding: 25px 100px;
+    }
 }
